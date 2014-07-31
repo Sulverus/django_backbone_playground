@@ -3,8 +3,16 @@ from tweets.models import Tweet
 from django.contrib.auth.models import User
 
 
+class UserSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = User
+        exclude = ('password', )
+
+
 class UserViewSet(viewsets.ModelViewSet):
     model = User
+    serializer_class = UserSerializer
 
 
 class TweetSerializer(serializers.ModelSerializer):

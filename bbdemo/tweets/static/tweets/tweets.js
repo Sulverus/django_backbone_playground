@@ -66,13 +66,12 @@ $(function(){
             }, this);
             new InputView({
                 collection: this.tweets,
-                el: $('.input_data'),
+                el: $('.input_data')
             });
             return this;
         }
     });
 
-    // Create app and init
+    // Create app
     var app = new Timeline();
-    app.initialize();
 });
