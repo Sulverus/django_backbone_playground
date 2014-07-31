@@ -29,12 +29,10 @@ $(function(){
             }
 
         },
-        // Получаем текст твита и добавляем его в коллекцию
+        // Handling new object creation
         createTweet: function(){
             var message = this.$('#message').val();
             if(message){
-                // После этого TweetCollection автоматически
-                // отправит post запрос в бекенд!
                 this.collection.create({
                     text: message,
                     username: $('.user_data').attr('username')
