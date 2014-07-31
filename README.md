@@ -7,12 +7,13 @@ of jQuery callbacks, all tied to concrete DOM elements."
 
 This is a small example, showing how can communicate django and backbone.js using the REST API
 
-Stack
------
-Server:
+Server
+------
  * Django 1.6.5
  * Django Rest Framework
-Client:
+
+Frontend
+--------
  * Backbone.js - awesome frontend library =)
  * icanhaz.js - nice js rendering library
 
