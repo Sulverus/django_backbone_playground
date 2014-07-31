@@ -1,0 +1,31 @@
+{% extends 'tweets/base.html' %}
+{% block content %}
+    <div class="jumbotron">
+        <div class="container">
+        <h1>Backbone with django is awesome!</h1>
+        <p>
+            "The problem is standard JavaScript libraries are great at what they do -
+            and without realizing it you can build an entire application without any
+            formal structure. You will with ease turn your application into a nested pile
+            of jQuery callbacks, all tied to concrete DOM elements."
+        </p>
+        <p>
+            This is a small example, showing how can communicate django and <b>Backbone.js</b> using the REST API.
+        </p>
+        <p>
+            <a href="http://backbonejs.org/" class="btn btn-primary btn-lg">Read more »</a>
+        </p>
+      </div>
+    </div>
+    <div class="container input_data">
+        <div class="form-group">
+            <label>How are you?</label>
+            <textarea id='message' maxlength="120" class="form-control"></textarea>
+        </div>
+        <button class="tweet-it btn btn-default pull-right">GO</button>
+    </div>
+    <div class="container">
+        <hr>
+        <div class="feed"></div>
+    </div>
+{% endblock %}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backbone demo</title>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"
+    rel="stylesheet">
+    <style>
+        body {
+          padding-top: 50px;
+          padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+  <body>
+    <div class="user_data" username="{{ user.username }}"></div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Backbone demo</a>
+        </div>
+        <div class="navbar-collapse collapse pull-right">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="/">Main</a>
+            </li>
+            <li>
+              <a href="http://backbonejs.org/">Docs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {% block content %}{% endblock %}
+
+    <div class="container">
+        <footer>
+            <p> © Backbone demo</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+    <script src="/static/tweets/ich.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+
+    <script src="/static/tweets/bb_patch.js"></script>
+    <script src="/static/tweets/tweets.js"></script>
+    {% include 'tweets/tweet.html' %}
+  </body>
+
+</html>

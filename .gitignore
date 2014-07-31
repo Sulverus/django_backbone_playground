@@ -1,6 +1,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+.idea/
 
 # C extensions
 *.so
@@ -44,6 +45,9 @@ coverage.xml
 
 # Rope
 .ropeproject
+
+#db stuff
+*.sqlite3
 
 # Django stuff:
 *.log
